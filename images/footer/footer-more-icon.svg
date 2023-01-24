@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Шар_2" data-name="Шар 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.3 12.65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #91c3d6;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1" data-name="Capa 1">
+    <path class="cls-1" d="m11.65,12.65c-.26,0-.51-.1-.71-.29L.29,1.71C-.1,1.32-.1.68.29.29S1.32-.1,1.71.29l9.94,9.94L21.59.29c.39-.39,1.02-.39,1.41,0s.39,1.02,0,1.41l-10.65,10.65c-.2.2-.45.29-.71.29Z"/>
+  </g>
+</svg>
