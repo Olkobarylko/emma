@@ -45,20 +45,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: white;
-  position: relative;
-}
-
-body::before {
-  content: "";
-  background-image: url("../images/home/protect-bg.png");
-  background-size: cover;
-  background-position: center;
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  z-index: -20000;
 }
 
 .header {
@@ -1208,6 +1194,23 @@ body::before {
   display: block;
 }
 
+main {
+  position: relative;
+}
+
+main::before {
+  content: "";
+  background-image: url("../images/home/protect-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: -20000;
+}
+
 @media screen and (max-width: 1750px) {
   .header__socials {
     min-width: 335px;
@@ -1579,11 +1582,31 @@ body::before {
   }
 }
 
-@media (max-width: 768px) {
-  body::before {
-    background-image: url("../images/home/protect-bg-mobile.webp");
+@media screen and (max-width: 768px) {
+  .header__bottom-block {
+    min-height: auto;
+    padding: 10px 8px;
   }
 
+  .header__logo {
+    line-height: 0;
+  }
+
+  .header__logo img {
+    width: 204px;
+    height: 32px;
+  }
+
+  .header__bottom-wrapper {
+    gap: 11px;
+  }
+
+  .header__language-btn:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
   .footer__container_bootom-block {
     padding-top: 43px;
   }
@@ -1973,29 +1996,9 @@ body::before {
   .desktop-br {
     display: none;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .header__bottom-block {
-    min-height: auto;
-    padding: 10px 8px;
-  }
-
-  .header__logo {
-    line-height: 0;
-  }
-
-  .header__logo img {
-    width: 204px;
-    height: 32px;
-  }
-
-  .header__bottom-wrapper {
-    gap: 11px;
-  }
-
-  .header__language-btn:nth-child(2) {
-    display: none;
+  main::before {
+    background-image: url("../images/home/protect-bg-mobile.webp");
   }
 }
 
@@ -2014,9 +2017,9 @@ body::before {
   }
 }
 
-.webp body::before { background-image: url(../images/home/protect-bg.webp); }
-
 .webp .footer__bottom-block-title::before { background-image: url(../images/zoom-icon.webp); }
+
+.webp main::before { background-image: url(../images/home/protect-bg.webp); }
 
 @media screen and (max-width: 1400px) {
 
