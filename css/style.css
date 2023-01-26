@@ -47,6 +47,10 @@ body {
   background-color: white;
 }
 
+main {
+  overflow: hidden;
+}
+
 .header {
   background-color: white;
 }
@@ -686,7 +690,7 @@ body {
 }
 
 .front-section__background-block {
-  z-index: -1000;
+  z-index: -1;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -788,11 +792,24 @@ body {
   margin-bottom: 10px;
 }
 
+div.parallax-image1 {
+  background-position: center;
+  background-image: url("../images/home/protect-bg.png");
+  background-size: cover;
+  left: 0px;
+  top: 0;
+  margin-top: -100vh;
+  width: 100vw;
+  height: 100vh;
+  /* Safari */
+  position: sticky;
+  z-index: -1000;
+}
+
 .protect-section {
   min-height: 402px;
   height: 100%;
   width: 100%;
-  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1192,24 +1209,6 @@ body {
 
 .desktop-br {
   display: block;
-}
-
-main {
-  overflow: hidden;
-  position: relative;
-}
-
-main::before {
-  content: "";
-  background-image: url("../images/home/protect-bg.png");
-  background-size: cover;
-  background-position: center;
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  z-index: -20000;
 }
 
 @media screen and (max-width: 1750px) {
@@ -1997,10 +1996,6 @@ main::before {
   .desktop-br {
     display: none;
   }
-
-  main::before {
-    background-image: url("../images/home/protect-bg-mobile.webp");
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -2020,7 +2015,7 @@ main::before {
 
 .webp .footer__bottom-block-title::before { background-image: url(../images/zoom-icon.webp); }
 
-.webp main::before { background-image: url(../images/home/protect-bg.webp); }
+.webp div.parallax-image1 { background-image: url(../images/home/protect-bg.webp); }
 
 @media screen and (max-width: 1400px) {
 
