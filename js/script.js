@@ -85,6 +85,39 @@ function toggleMenu() {
   burger_btn.classList.toggle('active');
 }
 
+
+function redirectBra() {
+  if (location.href.includes('bra/')) {} else {
+    location.href = location.href.slice(0, (location.href.lastIndexOf('/') + 1)) + "bra/" + location.href.slice((location.href.lastIndexOf('/') + 1));
+  }
+}
+
+function redirectArg() {
+  if (location.href.includes('bra/')) {
+    location.href = location.href.replace('bra/', '')
+  }
+}
+
+let header__language_btn_arg = document.querySelector('.header__language-btn_arg');
+let header__language_btn_bra = document.querySelector('.header__language-btn_bra');
+
+if (location.href.includes('bra/')) {
+    header__language_btn_arg.style.display = "none";
+    header__language_btn_bra.style.display = "block";
+}
+else{
+  header__language_btn_arg.style.display = "block";
+  header__language_btn_bra.style.display = "none";
+}
+
+function redirectBraMobile() {
+  location.href = location.href.replace('bra/', '')
+}
+
+function redirectArgMobile() {
+  location.href = location.href.slice(0, (location.href.lastIndexOf('/') + 1)) + "bra/" + location.href.slice((location.href.lastIndexOf('/') + 1));
+}
+
 let footerContacts = document.querySelector('.footer__contacts');
 let footerMoreBtn = document.querySelector('.footer__bottom-block-more');
 let footerContactsStatus = true;
@@ -193,33 +226,3 @@ if (numbers) {
   })
 }
 
-function redirectBra() {
-  if (location.href.includes('bra/')) {} 
-  else { 
-    location.href = location.href.slice(0, (location.href.lastIndexOf('/') + 1)) + "bra/" + location.href.slice((location.href.lastIndexOf('/') + 1));
-  }
-}
-
-function redirectArg() {
-  if (location.href.includes('bra/')) {
-    location.href = location.href.replace('bra/', '')
-  }
-}
-
-let mql2 = window.matchMedia('(max-width: 768px)');
-let header__language_btn_arg = document.querySelector('.header__language-btn_arg')
-let header__language_btn_bra = document.querySelector('.header__language-btn_bra')
-
-if(mql1.matches){
-    if(location.href.includes('bra/')){
-      console.log('arg')
-      header__language_btn_arg.style.display = "block";
-      header__language_btn_bra.style.display = "none";
-    }
-    else{
-
-      header__language_btn_arg.style.display = "none";
-      header__language_btn_bra.style.display = "block";
-      console.log('bra')
-    }
-}
