@@ -319,15 +319,6 @@ main {
 .header__language-btn img {
   width: 100%;
   height: 100%;
-  -webkit-transition: all ease-in-out 0.25s;
-  -o-transition: all ease-in-out 0.25s;
-  transition: all ease-in-out 0.25s;
-}
-
-.header__language-btn img:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .header__language_mobile {
@@ -1600,7 +1591,7 @@ main {
 .support-section h2 {
   text-align: center;
   color: #e2e6eb;
-  font-size: 42px;
+  font-size: 34px;
   line-height: 50px;
   font-weight: 600;
   font-style: italic;
@@ -1872,7 +1863,7 @@ main {
 .team-section h2 {
   text-align: center;
   color: #e2e6eb;
-  font-size: 42px;
+  font-size: 34px;
   line-height: 50px;
   font-weight: 600;
   font-style: italic;
@@ -3293,11 +3284,6 @@ main {
     line-height: 28px;
   }
 
-  .support-section h2 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-
   .empresa-bottom-section__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3358,11 +3344,6 @@ main {
 
   .agroriesgo-front-block {
     min-height: 550px;
-  }
-
-  .team-section h2 {
-    font-size: 40px;
-    line-height: 50px;
   }
 
   .metodologia-section__block {

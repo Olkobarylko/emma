@@ -205,3 +205,21 @@ function redirectArg() {
     location.href = location.href.replace('bra/', '')
   }
 }
+
+let mql2 = window.matchMedia('(max-width: 768px)');
+let header__language_btn_arg = document.querySelector('.header__language-btn_arg')
+let header__language_btn_bra = document.querySelector('.header__language-btn_bra')
+
+if(mql1.matches){
+    if(location.href.includes('bra/')){
+      console.log('arg')
+      header__language_btn_arg.style.display = "block";
+      header__language_btn_bra.style.display = "none";
+    }
+    else{
+
+      header__language_btn_arg.style.display = "none";
+      header__language_btn_bra.style.display = "block";
+      console.log('bra')
+    }
+}

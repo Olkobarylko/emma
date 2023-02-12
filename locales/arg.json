@@ -1,6 +1,17 @@
 {
     "agroriesgo": {
       "agroriesgo-front-block__title": "Agroriesgo",
-      "agroriesgo-front-block__description":"Es una <b>unidad de negocio</b> dedicada a <b>diagnosticar posibles amenazas en cultivos y generar coberturas de seguro</b> a la medida exacta de cada necesidad."
+      "agroriesgo-front-block__description":"Es una <b>unidad de negocio</b> dedicada a <b>diagnosticar posibles amenazas en cultivos y generar coberturas de seguro</b> a la medida exacta de cada necesidad.",
+      "team-section-title": "Un equipo de especialistas dedicados a asesorarte, <br> basados en un exhaustivo diagnóstico de riesgo agrícola.",
+      "metodologia-section-title":"Metodología",
+      "metodologia-section-text":"<b>Analizamos los riesgos de la cosecha,</b> sobre la base de su ubicación geográfica, <b>con tecnología aplicada y personal técnico.</b> Diseñamos coberturas para garantizar la mejor protección en la campaña, <b>reduciendo al mínimo su impacto.</b>",
+      "metodologia-section__block-title": "Coberturas para proteger de:",
+      "metodologia-section__block-list-first":"<li><b>+</b> Granizo Tradicional.</li> <li><b>+</b> Granizo con Franquicia <br> sobre lote dañado.</li> <li><b>+</b> Resiembra.</li> <li><b>+</b> Incendio.</li>",
+      "metodologia-section__block-list-second": " <li><b>+</b> Vientos fuertes.</li><li><b>+</b> Heladas.</li><li><b>+</b> Exceso de pérdida.</li><li><b>+</b> Multirriesgo.</li><li><b>+</b> Sequías.</li>",
+      "agroriesgo-contact-section-title": "Contáctese con nuestros especialistas de Agro:",
+      "agroriesgo-contact-section__first-block-title":"Cristian Horny",
+      "agroriesgo-contact-section__second-block-title":"Candelaria Guevara"
+
+    
     }
 }
